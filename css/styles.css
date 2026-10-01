@@ -1,16 +1,16 @@
 /* Colors and spacing */
 :root {
   --color-primary: #102b50;
-  --color-background: #f2f4f7;
-  --color-white: #ffffff;
-  --color-text: #202733;
+  --color-background: #f1f1f2;
+  --color-white: hwb(240 91% 5%);
+  --color-text: #262728;
 
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
 }
 
-/* Reset browser defaults */
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +30,7 @@ body {
   padding: var(--spacing-large);
   background-color: var(--color-primary);
   color: var(--color-white);
-  text-align: center;
+  text-align: Center;
 }
 /* Club logo */
 .header__logo {
@@ -49,6 +49,7 @@ body {
 
 .team__title {
   margin-bottom: var(--spacing-medium);
+  color: var(--color-text);
 }
 
 /* Player grid: one column on small screens */
@@ -60,29 +61,59 @@ body {
 
 /* Player card */
 .player-card {
-  background-color: var(--color-white);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  position: relative
+  overflow: visible;
+  box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 15%);
+  transition: transform 0.3s ease;
+}
+.player-card:hover {
+    z-index: 10;
+    transform: scale(1.08);
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 25%);
 }
 
 .player-card__image {
   display: block;
   width: 100%;
-  height: 18rem;
-  object-fit: contain;
-  background-color: var(--color-white);
+  height: 20rem;
+  margin: 0;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center top;
+  position: relative;
+transform-origin: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .player-card__info {
-  padding: var(--spacing-medium);
+     position: relative;
+  padding: 1.25rem;
+   padding-right: 7rem;
+  border-top: 0.25rem solid var(--color-white);
+}
+.player-card__logo {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: auto;
 }
 
 .player-card__name {
-  margin-bottom: var(--spacing-small);
-  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  color: var(--color-white);
+  font-size: 1.25rem;
 }
-
+.player-card__number {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 /* Page footer */
 .footer {
   padding: var(--spacing-large) var(--spacing-medium);
@@ -103,4 +134,13 @@ body {
   .team__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+@media (prefers-reduced-motion: reduce) {
+    .player-card {
+        transition: none;
+    }
+
+    .player-card:hover {
+        transform: none;
+    }
 }
