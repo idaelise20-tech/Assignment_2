@@ -1,0 +1,99 @@
+/* Colors and spacing */
+:root {
+  --color-primary: #102b50;
+  --color-background: #f2f4f7;
+  --color-white: #ffffff;
+  --color-text: #202733;
+
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+}
+
+/* Reset browser defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Page header */
+.header {
+  padding: var(--spacing-large);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Main content */
+.team {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+}
+
+.team__title {
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Player grid: one column on small screens */
+.team__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-large);
+}
+
+/* Player card */
+.player-card {
+  background-color: var(--color-white);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
+}
+
+.player-card__image {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: contain;
+  background-color: var(--color-white);
+}
+
+.player-card__info {
+  padding: var(--spacing-medium);
+}
+
+.player-card__name {
+  margin-bottom: var(--spacing-small);
+  color: var(--color-primary);
+}
+
+/* Page footer */
+.footer {
+  padding: var(--spacing-large) var(--spacing-medium);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Two columns on medium screens */
+@media (min-width: 40rem) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Three columns on large screens */
+@media (min-width: 64rem) {
+  .team__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
