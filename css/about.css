@@ -1,0 +1,17 @@
+.header__history {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+  color: var(--color-text2);
+}
+.about__history {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+}
+.about__slogan {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+  color: var(--color-text2);
+}

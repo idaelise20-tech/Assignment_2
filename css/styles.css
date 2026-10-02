@@ -27,39 +27,32 @@ body {
 }
 
 /* Page header */
+/* Header */
 .header {
-  padding: var(--spacing-medium);
   background-color: var(--color-primary);
   color: var(--color-white);
-  text-align: left;
-  background-image: url("../assets/images/Lag.jpg");
-  background-size: 100%;
-  background-position: center 30%;
-  min-height: 40vh;
-  background-repeat: no-repeat;
 }
-.header__title {
-  padding: var(--spacing-large);
-  background-color: dustyblue;
 
-  color: var(--color-white);
-  text-align: center;
-  font-size: 5rem;
+/* Logo and navigation */
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
 }
-.header__subtitle {
-  padding: var(--spacing-medium);
 
-  color: var(--color-white);
-  text-align: center;
-}
-/* Club logo */
 .header__logo {
   display: block;
   width: 4rem;
   height: auto;
-  margin: 0 0 var(--spacing-medium); /* topp 0, sider 0, bunn medium */
+  margin: 0;
 }
+
 .navbar__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -68,120 +61,54 @@ body {
 .navbar__link {
   color: var(--color-white);
   text-decoration: none;
-}
-/* Main content */
-.team {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: var(--spacing-large) var(--spacing-medium);
-}
-
-.team__title {
-  margin-bottom: var(--spacing-medium);
-  color: var(--color-text);
-}
-
-/* Player grid: one column on small screens */
-.team__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-large);
-}
-
-/* Player card */
-.player-card {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-radius: 0.5rem;
-  position: relative;
-  overflow: visible;
-  box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 15%);
-  transition: transform 0.3s ease;
-}
-.player-card:hover {
-  z-index: 10;
-  transform: scale(1.08);
-  box-shadow: 0 1rem 2rem rgb(0 0 0 / 25%);
-}
-
-.player-card__image {
-  display: block;
-  width: 100%;
-  height: 20rem;
-  margin: 0;
-  border-radius: 0;
-  object-fit: cover;
-  object-position: center top;
-  position: relative;
-  transform-origin: center;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.player-card__info {
-  position: relative;
-  padding: 1.25rem;
-  padding-right: 7rem;
-  border-top: 0.25rem solid var(--color-white);
-}
-.player-card__logo {
-  position: absolute;
-  right: 1.25rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5rem;
-  height: auto;
-}
-
-.player-card__name {
-  margin-bottom: 0.75rem;
-  color: var(--color-white);
-  font-size: 1.25rem;
-}
-.player-card__number {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
   font-weight: 700;
 }
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
+/* Team photo and heading */
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  min-height: 20rem;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  background-image:
+    linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)),
+    url("../assets/images/Lag.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
 /* Page footer */
 .footer {
   padding: var(--spacing-large) var(--spacing-medium);
   background-color: var(--color-primary);
   color: var(--color-white);
   text-align: center;
-}
-.header__history {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: var(--spacing-large) var(--spacing-medium);
-  color: var(--color-text2);
-}
-.about__history {
-  max-width: 75rem;
-  margin: 0 auto;
-  padding: var(--spacing-large) var(--spacing-medium);
-}
-
-/* Two columns on medium screens */
-@media (min-width: 40rem) {
-  .team__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Three columns on large screens */
-@media (min-width: 64rem) {
-  .team__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .player-card {
-    transition: none;
-  }
-
-  .player-card:hover {
-    transform: none;
-  }
 }

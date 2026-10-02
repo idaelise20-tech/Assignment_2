@@ -12,25 +12,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/players.css" />
+    <link rel="stylesheet" href="css/tabell.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
     <!-- Page header -->
 
     <header class="header">
-      <img
-        class="header__logo"
-        src="assets/images/Rana_FK_logo.png"
-        alt="Rana FK logo"
-      />
-      <h1 class="header__title">Rana Football Club</h1>
-      <p class="header__subtitle">2. division tabel</p>
-      <nav class="navbar">
-        <ul class="navbar__links">
-          <li><a class="navbar__link" href="index.html">Home</a></li>
-          <li><a class="navbar__link" href="tabell.html">Table</a></li>
-          <li><a class="navbar__link" href="about.html">About</a></li>
-        </ul>
-      </nav>
+      <!-- Logo and navigation -->
+      <div class="header__top">
+        <img
+          class="header__logo"
+          src="assets/images/Rana_FK_logo.png"
+          alt="Rana FK logo"
+        />
+
+        <nav class="navbar" aria-label="Main navigation">
+          <ul class="navbar__links">
+            <li>
+              <a class="navbar__link" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="navbar__link" href="tabell.html">Table</a>
+            </li>
+            <li>
+              <a class="navbar__link" href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Team photo and heading -->
+      <div class="header__content">
+        <h1 class="header__title">Rana FK</h1>
+        <p class="header__subtitle">Men's First Team</p>
+      </div>
     </header>
   </body>
 </html>
