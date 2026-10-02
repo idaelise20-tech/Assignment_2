@@ -1,3 +1,4 @@
+
 /* Main content */
 main {
   max-width: 75rem;
@@ -17,6 +18,7 @@ main section {
 
 /* Table */
 table {
+    border: 0.2rem solid var(--color-primary);
   width: 100%;
   border-collapse: collapse;
   background-color: var(--color-white);

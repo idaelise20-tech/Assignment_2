@@ -7,7 +7,7 @@
 
 .team__title {
   margin-bottom: var(--spacing-medium);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 /* Player grid: one column on small screens */
@@ -19,6 +19,7 @@
 
 /* Player card */
 .player-card {
+  border: 0.2rem solid var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 0.5rem;

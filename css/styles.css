@@ -23,7 +23,7 @@ body {
   font-family: "Playfair Display", serif;
   line-height: 1.5;
   background-color: var(--color-background);
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 /* Page header */
@@ -88,6 +88,8 @@ body {
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
+  border-top: 0.2rem solid var(--color-white);
+  border-bottom: 0.2rem solid var(--color-primary);
 }
 
 .header__title {
@@ -107,6 +109,7 @@ body {
 
 /* Page footer */
 .footer {
+  border-top: 0.2rem solid var(--color-white);
   padding: var(--spacing-large) var(--spacing-medium);
   background-color: var(--color-primary);
   color: var(--color-white);
