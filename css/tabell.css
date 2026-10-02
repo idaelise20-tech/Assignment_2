@@ -1,0 +1,121 @@
+/* Main content */
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+}
+
+main h2 {
+  margin-bottom: var(--spacing-medium);
+  color: var(--color-primary);
+}
+
+/* Allow horizontal scrolling */
+main section {
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-white);
+}
+.header__tabelhead {
+  margin-bottom: var(--spacing-medium);
+  color: var(--color-primary);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: var(--spacing-medium) 0;
+}
+th,
+td {
+  padding: var(--spacing-medium);
+  text-align: center;
+  border-bottom: 1px solid #d6dce4;
+}
+
+th {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Team names */
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: left;
+  white-space: nowrap;
+}
+
+td a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+td a:hover,
+td a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Points */
+td:last-child {
+  font-weight: 700;
+}
+
+/* Promotion and relegation markers */
+tr.team__promoted td:first-child {
+  border-left: 0.3rem solid #1ced8c;
+}
+
+tr.team__promoted-qualifier td:first-child {
+  border-left: 0.3rem solid #0b5ed7;
+}
+
+tr.team__relegated td:first-child {
+  border-left: 0.3rem solid #bb2d3b;
+}
+
+/* Explanation below the table */
+.table__explanation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap; 1,5rem;
+  margin-top: var(--spacing-medium);
+  font-size: 0.875rem;
+  font-weight: 400;
+  
+  gap: 0.5rem;
+}
+/* Hide extra columns on small screens */
+@media (max-width: 40rem) {
+  .hidden__on-mobil {
+    display: none;
+  }
+
+  /* Hide the matching column headings */
+  thead th:nth-child(4),
+  thead th:nth-child(5),
+  thead th:nth-child(6),
+  thead th:nth-child(7),
+  thead th:nth-child(8) {
+    display: none;
+  }
+}
+table {
+  width: 100%;
+  min-width: 0;
+  font-size: 0.875rem;
+}
+
+th,
+td {
+  padding: 0.5rem 0.25rem;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  white-space: normal;
+}
