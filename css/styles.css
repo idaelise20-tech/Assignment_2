@@ -2,8 +2,9 @@
 :root {
   --color-primary: #102b50;
   --color-background: #f1f1f2;
-  --color-white: hwb(240 91% 5%);
-  --color-text: #262728;
+  --color-white: hwb(0 100% 0%);
+  --color-text: #000000;
+  --color-text2: #3066ac;
 
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
@@ -19,7 +20,7 @@
 
 /* General page styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.5;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -27,19 +28,47 @@ body {
 
 /* Page header */
 .header {
-  padding: var(--spacing-large);
+  padding: var(--spacing-medium);
   background-color: var(--color-primary);
   color: var(--color-white);
-  text-align: Center;
+  text-align: left;
+  background-image: url("../assets/images/Lag.jpg");
+  background-size: 100%;
+  background-position: center 30%;
+  min-height: 40vh;
+  background-repeat: no-repeat;
+}
+.header__title {
+  padding: var(--spacing-large);
+  background-color: dustyblue;
+
+  color: var(--color-white);
+  text-align: center;
+  font-size: 5rem;
+}
+.header__subtitle {
+  padding: var(--spacing-medium);
+
+  color: var(--color-white);
+  text-align: center;
 }
 /* Club logo */
 .header__logo {
   display: block;
-  width: 6rem;
+  width: 4rem;
   height: auto;
-  margin: 0 auto var(--spacing-medium);
+  margin: 0 0 var(--spacing-medium); /* topp 0, sider 0, bunn medium */
+}
+.navbar__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar__link {
+  color: var(--color-white);
+  text-decoration: none;
+}
 /* Main content */
 .team {
   max-width: 75rem;
@@ -64,15 +93,15 @@ body {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: 0.5rem;
-  position: relative
+  position: relative;
   overflow: visible;
   box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 15%);
   transition: transform 0.3s ease;
 }
 .player-card:hover {
-    z-index: 10;
-    transform: scale(1.08);
-    box-shadow: 0 1rem 2rem rgb(0 0 0 / 25%);
+  z-index: 10;
+  transform: scale(1.08);
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 25%);
 }
 
 .player-card__image {
@@ -84,15 +113,16 @@ body {
   object-fit: cover;
   object-position: center top;
   position: relative;
-transform-origin: center;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-
 .player-card__info {
-     position: relative;
+  position: relative;
   padding: 1.25rem;
-   padding-right: 7rem;
+  padding-right: 7rem;
   border-top: 0.25rem solid var(--color-white);
 }
 .player-card__logo {
@@ -121,6 +151,17 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: var(--color-white);
   text-align: center;
 }
+.header__history {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+  color: var(--color-text2);
+}
+.about__history {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--spacing-large) var(--spacing-medium);
+}
 
 /* Two columns on medium screens */
 @media (min-width: 40rem) {
@@ -136,11 +177,11 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
 @media (prefers-reduced-motion: reduce) {
-    .player-card {
-        transition: none;
-    }
+  .player-card {
+    transition: none;
+  }
 
-    .player-card:hover {
-        transform: none;
-    }
+  .player-card:hover {
+    transform: none;
+  }
 }
