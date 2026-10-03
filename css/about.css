@@ -2,7 +2,7 @@
   max-width: 75rem;
   margin: 0 auto;
   padding: var(--spacing-large) var(--spacing-medium);
-  color: var(--color-text2);
+  color: var(--color-primary);
 }
 .about__history {
   max-width: 75rem;
@@ -13,5 +13,5 @@
   max-width: 75rem;
   margin: 0 auto;
   padding: var(--spacing-large) var(--spacing-medium);
-  color: var(--color-text2);
+  color: var(--color-primary);
 }
