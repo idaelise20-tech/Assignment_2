@@ -9,6 +9,9 @@
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
+
+  --font-body: "Playfair Display", serif;
+  --font-heading: Arial, sans-serif;
 }
 
 /* GLOBAL STYLES */
@@ -20,13 +23,12 @@
 
 /* General page styling */
 body {
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-body);
   line-height: 1.5;
   background-color: var(--color-background);
   color: var(--color-primary);
 }
 
-/* Page header */
 /* Header */
 .header {
   background-color: var(--color-primary);
@@ -95,7 +97,7 @@ body {
 .header__title {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-heading);
   font-size: 3rem;
   line-height: 1.1;
 }
@@ -103,7 +105,7 @@ body {
 .header__subtitle {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-heading);
   font-size: 1.25rem;
 }
 

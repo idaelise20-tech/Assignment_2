@@ -24,6 +24,7 @@ Each card includes a player image, name, shirt number, position and birth year.
 Player information, photographs and the club logo were sourced from:
 https://www.ranafk.no/a-laget/ and https://www.ranablad.no/oskar-31-flyttet-til-rana-for-ny-jobb-du-utvikler-deg-ikke-i-komfortsonen-sa-da-ma-du-utfordre-deg-jeg-er-klar-for-a-begynne-na-med-en-gang/s/5-42-1279404
 https://www.ranablad.no/ingen-umiddelbar-olufsen-effekt-men-han-har-troen-jeg-merket-et-stort-potensial/s/5-42-1022304
+Tabell https://www.fotball.no/fotballdata/lag/hjem/?fiksId=206540&underside=tabeller
 
 ## Disclaimer
 
