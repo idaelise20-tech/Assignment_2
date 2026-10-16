@@ -83,7 +83,7 @@ tr.team__relegated td:first-child {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1, 5rem;
+  gap: 1.5rem;
   margin-top: var(--spacing-medium);
   font-size: 0.875rem;
   font-weight: 400;
