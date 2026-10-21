@@ -12,6 +12,13 @@
 
   --font-body: "Playfair Display", serif;
   --font-heading: Arial, sans-serif;
+  /* Font sizes */
+  --font-size-small: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
 }
 
 /* GLOBAL STYLES */
@@ -98,7 +105,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: var(--font-size-xxl);
   line-height: 1.1;
 }
 
@@ -106,7 +113,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: var(--font-size-medium);
 }
 
 /* Page footer */

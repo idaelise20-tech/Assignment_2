@@ -81,11 +81,11 @@
 .player-card__name {
   margin-bottom: 0.75rem;
   color: var(--color-white);
-  font-size: 1.25rem;
+  font-size: var(--font-size-medium);
 }
 .player-card__number {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: var(--font-size-large);
   font-weight: 700;
 }
 /* Two columns on medium screens */
