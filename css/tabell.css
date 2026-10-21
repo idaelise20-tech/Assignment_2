@@ -19,6 +19,7 @@ main section {
 table {
   border: 0.2rem solid var(--color-primary);
   width: 100%;
+  min-width: 50rem;
   border-collapse: collapse;
   background-color: var(--color-white);
 }
@@ -88,33 +89,15 @@ tr.team__relegated td:first-child {
   font-size: var(--font-size-small);
   font-weight: 400;
 }
-/* Hide extra columns on small screens */
-@media (max-width: 40rem) {
-  .hidden__on-mobil {
-    display: none;
-  }
 
-  /* Hide the matching column headings */
-  thead th:nth-child(4),
-  thead th:nth-child(5),
-  thead th:nth-child(6),
-  thead th:nth-child(7),
-  thead th:nth-child(8) {
-    display: none;
-  }
+/* Adjust text and spacing on small screens */
+@media (max-width: 40rem) {
   table {
-    width: 100%;
-    min-width: 0;
     font-size: var(--font-size-small);
   }
 
   th,
   td {
     padding: 0.5rem 0.25rem;
-  }
-
-  th:nth-child(2),
-  td:nth-child(2) {
-    white-space: normal;
   }
 }
