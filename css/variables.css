@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #102b50;
+  --color-background: #f1f1f2;
+  --color-white: hwb(0 100% 0%);
+  --color-text: #000000;
+  --color-text2: #3066ac;
+
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  --font-body: "Playfair Display", serif;
+  --font-heading: Arial, sans-serif;
+  /* Font sizes */
+  --font-size-small: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-medium: 1.25rem;
+  --font-size-large: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+}
