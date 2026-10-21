@@ -16,8 +16,8 @@ Each card includes a player image, name, shirt number, position and birth year.
 
 ## Links
 
-- GitHub repository: https://github.com/idaelise20-tech/Assignment_2
-- Live website: - Live website: https://idaelise20-tech.github.io/Assignment_2/
+GitHub repository: https://github.com/idaelise20-tech/Assignment_2
+Live website: https://idaelise20-tech.github.io/Assignment_2/
 
 ## Sources
 
